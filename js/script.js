@@ -34,9 +34,9 @@
       },
       focusout:function(){
         var guid = $(this).siblings('.guid');
-        if(totalPtNum>=nowPtNum){
+        if(totalPtNum>nowPtNum){
           guid.removeClass('on'); 
-          return
+          return;
         }
         else{
           guid.addClass('on');
