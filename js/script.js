@@ -34,12 +34,12 @@
       },
       focusout:function(){
         var guid = $(this).siblings('.guid');
-        if(totalPtNum>nowPtNum){
-          guid.removeClass('on'); 
+        if(totalPtNum<nowPtNum){
+          guid.addClass('on'); 
           return;
         }
         else{
-          guid.addClass('on');
+          guid.removeClass('on');
         }
       }
     });
