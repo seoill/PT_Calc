@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>운동, 그만두겠습니다 | PT 환불 계산기</title>
+    <script src="./js/lib/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div id="title-box">
+                    <h1>운동,<br>그만두겠습니다.</h1>
+                    <p>~ PT 환불 계산기 ~</p>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <div class="container">
+                <div id="input-box">
+                    <ul>
+                        <li>
+                            <p class="tit">지불한 전체 PT 금액을 입력해주세요.</p>
+                            <input type="number" id="totalPtPrice" placeholder="전체 PT 금액">
+                            <p class="guid">정말 이 금액이 맞으신가요?</p>
+                        </li>
+                        <li>
+                            <p class="tit">전체 PT 횟수를 입력해주세요.</p>
+                            <input type="number" id="totalPtNum" placeholder="전체 PT 횟수">
+                        </li>
+                        <li>
+                            <p class="tit">남은 PT 횟수를 입력해주세요.</p>
+                            <input type="number" id="nowPtNum" placeholder="남은 PT 횟수">
+                            <p class="guid guid-2">남은 PT 횟수가 전체 PT 횟수 보다 많습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="option-box">
+                    <h3>계산 옵션을 골라주세요.</h3>
+                    <label for="option1">
+                        <input type="radio" name="option" id="option1" class="option" value="option1" checked>
+                        <span>전체 계약금의 10%가 위약금</span>
+                      </label>
+                      <label for="option2">
+                        <input type="radio" name="option" id="option2" class="option" value="option2">
+                        <span>회당 피티비의 10%가 위약금</span>
+                      </label>
+                </div>
+                <div class="button-box">
+                    <button type="button" class="result-btn">계산하기</button>
+                    <p class="guid guid-3">계산하기 위해서 값을 입력해주세요!</p>
+                </div>
+            </div>
+        </main>
+        <footer id="footer"></footer>
+        <div id="modal">
+            <div id="result-box">
+                <h3>내가 환불 받을 금액은? </h3>
+                <p><span id="resultTxt"></span><span>원 입니다.</span></p>
+                <div class="button-box">
+                    <button type="button" class="close-btn">다시 계산하기</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<script src="./js/script.js"></script>
+</body>
+</html>

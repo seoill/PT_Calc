@@ -1,0 +1,11 @@
+* {padding: 0; margin: 0; vertical-align: middle; box-sizing: border-box;}
+html, body, #wrap {width: 100%; height: 100%;}
+body {font: 14px/1 normal #333 'Noto Sans KR','Nanum Gothic';}
+h1,h2,h3,h4,h5,h6 {font-size: 14px; font-weight: normal;}
+ul, ol, li {list-style: none;}
+a {color: #333; text-decoration: none;}
+b, strong {font-weight: normal;}
+em, i, address {font-style: normal;}
+header, main, footer, nav, article, aside {display: block;}
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {appearance: none;}
+input {appearance:unset;}
